@@ -26,7 +26,7 @@ const Header = () => {
 
   return (
     <div className="w-full h-20 bg-white sticky top-0 z-50">
-      <nav className="h-full px-8 w-full mx-auto relative">
+      <nav className="h-full px-8 max-sm:px-3 w-full mx-auto relative">
         <div className="flex items-center h-full w-full gap-8 max-[826px]:justify-between max-[826px]:gap-0 ">
           <Link to="/"> 
             <div>
@@ -65,7 +65,7 @@ const Header = () => {
             )}
             <HiMenuAlt2
               onClick={() => setSidenav(!sidenav)}
-              className="max-[714px]:inline-block hidden cursor-pointer w-8 h-6 absolute top-6 right-4"
+              className="max-[714px]:inline-block hidden cursor-pointer w-8 h-6 absolute top-6 right-2"
             />
             {sidenav && (
               <div className="fixed top-0 left-0 w-full h-screen bg-black text-gray-200 bg-opacity-80 z-50">

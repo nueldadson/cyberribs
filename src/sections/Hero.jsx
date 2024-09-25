@@ -28,7 +28,7 @@ const Hero = () => {
     }, [sliderContent.length]);
 
   return (
-    <div className='px-8'>
+    <div className='px-8 max-sm:p-4'>
       <AwesomeSlider
         animation="cubeAnimation"
         selected={currentIndex}

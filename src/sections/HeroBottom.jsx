@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const HeroBottom = () => {
   return (
-    <div className='px-20 absolute w-full -mt-32 max-sm:px-12'>
+    <div className='px-20 absolute w-full -mt-32 max-sm:px-8'>
       <motion.ul
         initial={{ y: 70, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
