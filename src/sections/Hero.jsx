@@ -42,7 +42,7 @@ const Hero = () => {
       >
         {sliderContent.map((slide, index) => (
           <div key={index} className='w-full rounded-[30px] px-12 max-sm:px-4 h-full'
-            style={{ minHeight: '430px', height: 'calc(100vh - 80px)', backgroundImage: `url(${slide.image})`, backgroundPosition: 'top' }}
+            style={{ minHeight: '430px', height: 'calc(100vh - 80px)', backgroundImage: `url(${slide.image})`, backgroundPosition: 'top center', backgroundSize: 'cover' }}
           >
             <div className='flex-col gap-2 mt-28 herotxtH max-sm:mt-[150px]'>
               <span className='text-[#c084fc] font-extrabold tracking-widest'
