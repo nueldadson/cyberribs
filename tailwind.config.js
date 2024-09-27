@@ -16,7 +16,8 @@ module.exports = {
 			"4xl": ["48px", "58px"],
 			"8xl": ["96px", "106px"],
 		},
-		extend: {},
-  },
+		extend:  {
+    	},
+ 	 },
   plugins: [],
 }

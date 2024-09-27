@@ -34,14 +34,11 @@ nav .active li {
   }
 }
 
-.hero {
-  background-size: cover;
-  background-position: top;
+@media (max-height: 525px) {
+  .herotxtH {
+    margin-top: 88px !important;
+  }
 }
-
-/* .scrollbar-hide::-webkit-scrollbar {
-  display: none;
-} */
 
 .sidebarbackground {
   width: 100%;

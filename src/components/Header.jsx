@@ -25,12 +25,12 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="w-full h-20 bg-white sticky top-0 z-50">
-      <nav className="h-full px-8 max-sm:px-3 w-full mx-auto relative">
+    <div className="w-full h-20 max-sm:h-16 bg-white sticky top-0 z-50">
+      <nav className="h-full px-8 max-sm:px-4 w-full mx-auto relative">
         <div className="flex items-center h-full w-full gap-8 max-[826px]:justify-between max-[826px]:gap-0 ">
           <Link to="/"> 
             <div>
-              <div className="w-[128px] object-cover">
+              <div className="w-[128px] max-sm:w-[160px] object-cover">
                 <img src={logo} alt="CyberRibsLogo" srcset="" />
               </div>
             </div>
@@ -65,7 +65,7 @@ const Header = () => {
             )}
             <HiMenuAlt2
               onClick={() => setSidenav(!sidenav)}
-              className="max-[714px]:inline-block hidden cursor-pointer w-8 h-6 absolute top-6 right-2"
+              className="max-[714px]:inline-block hidden cursor-pointer w-8 h-6 max-sm:w-10 max-sm:h-8 absolute top-4 right-2"
             />
             {sidenav && (
               <div className="fixed top-0 left-0 w-full h-screen bg-black text-gray-200 bg-opacity-80 z-50">
@@ -77,7 +77,7 @@ const Header = () => {
                 >
                   <div className="w-full h-full sidebarbackground p-6">
                     <img
-                      className="w-28 mb-6"
+                      className="w-[130px] mb-6"
                       src={logo}
                       alt="logoLight"
                     />

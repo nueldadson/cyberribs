@@ -1,5 +1,5 @@
 import React, {useState, useEffect } from 'react';
-import { hero } from '../assets/images/index';
+import { hero, hero1, hero2, hero3, hero4 } from '../assets/images/index';
 import AwesomeSlider from 'react-awesome-slider';
 import 'react-awesome-slider/dist/styles.css';  // Import default styles
 import 'react-awesome-slider/dist/custom-animations/cube-animation.css'; // Cube animation styles
@@ -8,10 +8,12 @@ const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0); // To keep track of the current slide
 
     const sliderContent = [
-      { image: hero, heading: 'Quality Matters', writeup: 'Experience top-notch service.' },
-      { image: hero, heading: 'Cyberribs', writeup: 'We always<br/>aim for the<br/>best.' },
-    { image: hero, heading: 'Innovation', writeup: 'Pioneering new ideas.' },
-  ];
+      { image: hero1, heading: 'CyberRibs', writeup: 'Augmented &<br/>Virtual Reality' },
+      { image: hero, heading: 'CyberRibs', writeup: 'We always<br/>aim for the<br/>best.' },
+      { image: hero2, heading: 'CyberRibs', writeup: 'Robotics<br/>Programming' },
+      { image: hero3, heading: 'CyberRibs', writeup: 'Data Center<br/>& Cloud' },
+      { image: hero4, heading: 'CyberRibs', writeup: 'Fintech<br/>Solutions' },
+    ];
 
     useEffect(() => {
       const initialTransition = setTimeout(() => {
@@ -28,20 +30,21 @@ const Hero = () => {
     }, [sliderContent.length]);
 
   return (
-    <div className='px-8 max-sm:p-4'>
+    <div className='px-8 max-sm:p-4 bg flex rounded-[30px] min-h-[430px]' style={{ height: 'calc(100vh - 80px)' }} >
       <AwesomeSlider
         animation="cubeAnimation"
         selected={currentIndex}
         buttons={false}
-        className='w-full rounded-[30px] overflow-hidden bg-white'
+        mobileTouch={false}
+        className='w-full rounded-[30px] overflow-hidden bg-orange-300 min-h-[430px]'
         style={{ height: 'calc(100vh - 80px)' }}
         infinite
       >
         {sliderContent.map((slide, index) => (
-          <div key={index} className='w-full rounded-[30px] overflow-hidden px-12 max-sm:px-8 flex justify-center flex-col min-h-[434px]'
-            style={{ height: 'calc(100vh - 80px)', backgroundImage: `url(${slide.image})`, backgroundSize: 'cover', backgroundPosition: 'top' }}
+          <div key={index} className='w-full rounded-[30px] px-12 max-sm:px-4 h-full'
+            style={{ minHeight: '430px', height: 'calc(100vh - 80px)', backgroundImage: `url(${slide.image})`, backgroundPosition: 'top' }}
           >
-            <div className='-mt-36 flex flex-col gap-2'>
+            <div className='flex-col gap-2 mt-28 herotxtH max-sm:mt-[150px]'>
               <span className='text-[#c084fc] font-extrabold tracking-widest'
                 style={{ textShadow: '1px 1px 2px black' }}
               >
