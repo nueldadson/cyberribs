@@ -4,9 +4,10 @@ import { Hero, HeroBottom } from '../sections';
 const Home = () => {
   return (
     <div>
-      <Hero />
+     ...... Updating
+      <!-- <Hero />
       <HeroBottom />
-    </div>
+    </div> -->
   )
 }
 
