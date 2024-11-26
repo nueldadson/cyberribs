@@ -6,8 +6,8 @@ const Home = () => {
     <div>
      ...... Updating
       <!-- <Hero />
-      <HeroBottom />
-    </div> -->
+      <HeroBottom /> -->
+    </div> 
   )
 }
 
