@@ -1,14 +1,13 @@
-import React from 'react'
-import { Hero, HeroBottom } from '../sections';
+import React from "react";
+import { Hero, HeroBottom } from "../sections";
 
 const Home = () => {
-  return (
-    <div>
-     ...... Updating
-      {/* <Hero />
-      <HeroBottom /> */} 
-    </div> 
-  )
-}
+	return (
+		<div>
+			<Hero />
+			<HeroBottom />
+		</div>
+	);
+};
 
 export default Home;
